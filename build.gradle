@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id "application"
+}
+
+apply plugin : "java"
+
+group 'org.deliveroo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    javaMainClass = "com.deliveroo.cron_expression_parser.CronExpressionParser"
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:31.0.1-jre'
+    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
