@@ -28,4 +28,6 @@ Subsequent runs should be faster.
 * Make sure you are in the parent directory of the project
 * Run script - CronExpressionParser.sh
 * Sample usage : $./CronExpressionParser.sh "*/15 0 1,15 * 1-5 /usr/bin/find"
+
+![Sample output](CronExpressionParser-SampleOutput.png)
 ---------------------------------------------------------------------------------------------------
