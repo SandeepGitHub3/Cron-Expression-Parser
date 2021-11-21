@@ -23,7 +23,7 @@ Initial run might take time for build process.
 Subsequent runs should be faster.
 
 ---------------------------------------------------------------------------------------------------
-### Run Command? ###
+### Run Command ###
 
 * Make sure you are in the parent directory of the project
 * Run script - CronExpressionParser.sh
