@@ -31,7 +31,7 @@ Subsequent runs should be faster.
 
 ![Sample output](CronExpressionParser-SampleOutput.png)
 ---------------------------------------------------------------------------------------------------
-### Source Code
+### Source Code Folder containing core logic
 
 https://github.com/SandeepGitHub3/Cron-Expression-Parser/tree/main/src/main/java/com/deliveroo/cron_expression_parser
 
