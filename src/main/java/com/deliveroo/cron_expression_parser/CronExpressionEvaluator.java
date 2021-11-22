@@ -13,7 +13,7 @@ import static com.deliveroo.cron_expression_parser.Constants.SPACE;
 
 public class CronExpressionEvaluator {
 
-    private static String planValueExpressionParser(String cronExpressionString, int startRange, int maxRange) {
+    private static String plainValueExpressionParser(String cronExpressionString, int startRange, int maxRange) {
         int cronSchedule = Integer.parseInt(cronExpressionString);
 
         if (cronSchedule < startRange || cronSchedule > maxRange) {
@@ -92,7 +92,7 @@ public class CronExpressionEvaluator {
             } else if (cronExpressionString.equals(ASTERIX)) {
                 return evaluateAstrixExpression(minRange, maxRange);
             } else {
-                return planValueExpressionParser(cronExpressionString, minRange, maxRange);
+                return plainValueExpressionParser(cronExpressionString, minRange, maxRange);
             }
         } catch (Exception e) {
             return INCORRECT_CRON_EXPRESSION_ERROR_MSG.apply(minRange, maxRange);
