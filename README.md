@@ -17,7 +17,7 @@ Cron Expression Parser
 
 * Clone/Check out the project and run Gradle build command.
 * $./gradlew clean build
-* Above command will also execute test cases and the build will fail if unit tests are not failing. 
+* Above command will also execute test cases and the build will fail if unit tests are not passing. 
 
 Initial run might take time for build process. 
 Subsequent runs should be faster.
